@@ -1,0 +1,6 @@
+#Ignored file patterns
+
+docker
+docker.pub
+docker.txt
+*.pub
