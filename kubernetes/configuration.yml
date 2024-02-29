@@ -2,7 +2,14 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginxwebserver
+  labels:
+    run: nginxwebserver
+    env: dev
 spec:
   containers:
     - image: nginx
       name: democontainer
+      resources: {}
+  dnsPolicy: ClusterFirstl
+  restartPolicy: Always
+status: {}
